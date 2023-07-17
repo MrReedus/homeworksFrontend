@@ -13,7 +13,6 @@ export const HW3 = () => {
   const [currentText, setCurrentText] = useState('');
   const [texts, setTexts] = useState<string[]>([
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
-      'ffffffffff'
   ]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -30,7 +29,7 @@ export const HW3 = () => {
   return (
     <div id={'hw03'}>
       {currentText ? (
-        <h1 id={'hw03-text'}>ЗДЕСЬ ХОТЕЛОСЬ БЫ УВИДЕТЬ ВВОДИМЫЙ ТЕКСТ</h1>
+        <h1 id={'hw03-text'}>{currentText}</h1>
       ) : (
         <h1 id={'hw03-default-text'}>Здесь появится новое дело</h1> // ничего не меняем, здесь все норм
       )}
